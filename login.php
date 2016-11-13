@@ -23,45 +23,27 @@
 
     <div class="container">
 
-      <!-- The justified navigation menu is meant for single line per list item.
-           Multiple lines will require custom code not provided by Bootstrap. -->
+
       <div class="masthead">
         <h3 class="text-muted">Me.Mo.Theta.Experience.In.Space</h3>
-        <nav>
-          <ul class="nav nav-justified">
-            <li class="nav-item"><a class="nav-link" href="index.php">Index</a></li>
-            <li class="nav-item"><a class="nav-link active" href="profil.php">Dein Profil</a></li>
-            <li class="nav-item"><a class="nav-link" href="exp_all.php">EXP von Allen!!</a></li>
-            <li class="nav-item"><a class="nav-link" href="exp_earn.php">Erfahrungspunkte verdienen</a></li>
-            <li class="nav-item"><a class="nav-link" href="exp_award.php">EXP verteilen</a></li>
-            <li class="nav-item"><a class="nav-link" href="sonstiges.php">Sonstiges</a></li>
-          </ul>
-        </nav>
-      </div>
+      <div class="row">
 
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-        <h1>Dein Profil</h1>
-        <p class="lead">Hier kannst du dein Profil sehen und Änderungen vornehmen.</p>
-      </div>
-
-
-      <div class='container' id='zwei'>
-      Spitzname:
+<form class='form-inline' action='index.php' method='POST'>
+  <div class='form-group'>
+    <label for='name'>Name</label>
+    <input type='text' class='loginform' id='name' name='name' placeholder='Wer bist denn du?'>
+  </div>
+  <div class='form-group'>
+    <label for='pw'>Passwort</label>
+    <input type='password' class='loginform' id='pw' name='loginpw' placeholder='deine@mailaddi.bsp'>
+  </div>
+  <button type='submit' class='btn btn-primary'>Send invitation</button>
+</form>
       
-
+      </div>
       </div>
 
-
-
-      <!-- Site footer -->
-      <footer class="footer">
-        <p>&copy; Company 2016</p>
-      </footer>
-
-    </div> <!-- /container -->
-
-
+      
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -73,3 +55,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
