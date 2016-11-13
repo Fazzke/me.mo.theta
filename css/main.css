@@ -1,0 +1,10 @@
+body{
+	font-family: "Lucida Console", "DejaVu Sans Mono", "Droid Sans Mono", monospace; 
+	background-image: url("startest.jpg");
+}
+
+.container{
+	background-color: white;
+	border-radius: 10px;
+	padding: 1em;
+}
